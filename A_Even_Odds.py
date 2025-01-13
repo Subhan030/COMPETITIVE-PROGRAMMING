@@ -1,0 +1,19 @@
+n,k=map(int,input().split())
+l=[]
+if(n==1):
+    print(1)
+elif(k==n):
+    if(n%2==0):
+        print(n)
+    else:
+        print(n-1)
+elif(n%2==0):
+    if(k<=n//2):
+        print(2*(k-1)+1)
+    else:
+        print(2*((k)%(n//2)))
+else:
+    if(k<=n//2+1):
+        print(2*(k-1)+1)
+    else:
+        print(2*((k)%(n//2+1)))
